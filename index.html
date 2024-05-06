@@ -2,26 +2,42 @@
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="styles.css" />
 
-
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro counter</title>
 </head>
 <body>
-    <h1>pomodoro counter!</h1>
+<div class="myDiv"><h1>pomodoro counter!</h1></div>
+<inst>
     <h2>Please enter the following</h2>
-
-    <form action="/action_page.php">
+    <p>
         <label for="Workhour">Working Time (In hours):</label>
-        <input type="text" id="Workhour" name="Workhour"><br><br>
+        <input type="number" id="Workhour" name="Workhour" min="1"><br><br>
         <label for="Starttime">Starting time:</label>
-        <input type="text" id="Starttime" name="Starttime"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+        <input type="time" id="Starttime" name="Starttime"><br><br>
+        <label for="breaks">Break times:</label>
+        <select name="breaks" id="breaks">
+            <option value="25min">Every 25 mins</option>
+            <option value="55min">Every 55 mins</option>
+            <option value="Non">No breaks</option>
+        </select>
+        <input type="button" onclick="split()" value="Submit">
+    </p>
+    <div>
+        <p id="data"></p>
+    </div>
 
-    <p>Click the "Submit" button and the form-data will be sent to a page on the
-        server called "action_page.php".</p>
 
+    <p>Click to begin!</p>
+    <div class="phase"><h2 id="phase"></h2></div>
+    <h2><time id="time"></time></h2>
+</inst>
+
+<div id="quack" hidden="hidden">Time left = <span id="timer"></span></div>
+
+<div><span id="clock"></span></div>
 
 </body>
 </html>
+
+<script src="main.js"></script>

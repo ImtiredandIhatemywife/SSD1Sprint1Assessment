@@ -1,16 +1,50 @@
 body {
     background-color: #36393e;
 }
-h1 {
-    font-size: 50px;
+
+.myDiv {
     text-align: center;
+
+}
+.phase {
+    text-align: center;
+
+}
+.phase h2 {
+    font-size: 80px;
+    background-color: dimgrey;
+    background-position: center;
+    background-size: 500px;
+    border-radius: 10px;
+    padding: 2px;
+    border-width: 50px;
+    display: inline-block;
+    box-shadow: 0px 3px 3px black;
+}
+.myDiv h1 {
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: black;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
+    background-color: dimgrey;
+    background-position: center;
+    background-size: 500px;
     border-radius: 10px;
+    padding: 2px;
+    border-width: 50px;
+    display: inline-block;
+    box-shadow: 0px 3px 3px black;
+}
 
+inst{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size:30px;
+    text-align: center;
 }
